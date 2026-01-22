@@ -2,7 +2,6 @@
   /* Base colors tuned around #F8E9D2 */
   --bg: #f8e9d2;           /* main background, your logo tone */
   --bg-soft: #fdf6ea;      /* lighter variant for gradients/cards */
-
   --primary: #1f2937;
   --accent: #d18a2c;       /* warm accent that works with #F8E9D2 */
   --accent-dark: #b8741f;
@@ -12,72 +11,65 @@
   --radius-lg: 14px;
 }
 
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    background: radial-gradient(
-        circle at top,
-        #fdf6ea 0%,
-        #f8e9d2 40%,
-        #f4dfc5 100%
-    );
-    color: var(--primary);
-    min-height: 100vh;
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-  }
-
-  .page {
-    width: 100%;
-    max-width: 960px;
-    padding: 24px 16px 32px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
-
-  header {
-    text-align: center;
-  }
-
-  .logo-wrapper {
-      display: inline-flex;
-      flex-direction: column;   /* stack logo above text */
-      align-items: center;
-      justify-content: center;
-      padding: 12px 18px;
-      gap: 6px;                 /* space between logo and brand text */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg); /* Entire body background to match logo background */
+  color: var(--primary);
+  min-height: 100vh;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
 
+.page {
+  width: 100%;
+  max-width: 960px;
+  padding: 24px 16px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 
+header {
+  text-align: center;
+}
 
-  .logo-wrapper img {
-    height: 200px;
-    width: auto;
-    display: block;
-  }
+.logo-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  gap: 6px;
+}
+
+.logo-wrapper img {
+  height: 200px;
+  width: auto;
+  display: block;
+  background: var(--bg); /* Ensure the logo area has the same background */
+}
 
 .brand-text {
-    text-align: center;
+  text-align: center;
 }
 
-  .brand-name {
-    font-size: 1.25rem;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-  }
+.brand-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
 
-  .brand-tagline {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-  }
+.brand-tagline {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
 
   main {
   flex: 1;
