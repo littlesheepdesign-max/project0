@@ -126,8 +126,8 @@ header {
 
 
 .service-card img {
-  width: 100px; /* Fixed size */
-  height: 100px; /* Same as width to create a square */
+  width: 300px; /* Fixed size */
+  height: 300px; /* Same as width to create a square */
   object-fit: cover; /* Ensures the image covers the area without distorting */
   border-radius: var(--radius-lg); /* Keeps the rounded corners */
   margin-bottom: 8px; /* Space below the image */
