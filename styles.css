@@ -124,11 +124,13 @@ header {
     gap: 4px;
   }
 
+
 .service-card img {
-  width: 100%; /* Makes the image responsive */
-  height: auto; /* Maintains the aspect ratio */
-  border-radius: var(--radius-lg); /* Optional: rounds the corners to match your card style */
-  margin-bottom: 8px; /* Adds some space between the image and the text content */
+  width: 100px; /* Fixed size */
+  height: 100px; /* Same as width to create a square */
+  object-fit: cover; /* Ensures the image covers the area without distorting */
+  border-radius: var(--radius-lg); /* Keeps the rounded corners */
+  margin-bottom: 8px; /* Space below the image */
 }
 
   .service-title {
