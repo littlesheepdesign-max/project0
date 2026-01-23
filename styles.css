@@ -214,5 +214,7 @@ header {
     }
     .service-card img {
     width: 100%; /* Adjust as necessary for smaller screens */
+    height: 100%;
   }
+
   }
