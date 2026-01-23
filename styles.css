@@ -108,21 +108,21 @@ header {
 
 
   .services {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 14px;
-  }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates three columns */
+  gap: 20px; /* Adjust gap as needed */
+}
 
-  .service-card {
-    background: var(--card-bg);
-    border-radius: var(--radius-lg);
-    padding: 14px 16px;
-    box-shadow: var(--shadow-soft);
-    border: 1px solid rgba(148, 163, 184, 0.12);
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-  }
+.service-card {
+  background: var(--card-bg);
+  border-radius: var(--radius-lg);
+  padding: 14px 16px;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
 
 
 .service-card img {
@@ -209,12 +209,18 @@ header {
     }
 
     .services {
-      max-width: 460px;
-      margin: 0 auto;
+     /* max-width: 460px; */
+      /*  margin: 0 auto; */
+      grid-template-columns: 1fr; /* Only one column on small screens */
     }
+  
+
     .service-card img {
-    width: 100%; /* Adjust as necessary for smaller screens */
-    height: 100%;
+    width: 100%; /* Makes images responsive */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures the image covers the area without distorting */
+    border-radius: var(--radius-lg); /* Keeps the rounded corners */
+    margin-bottom: 8px; /* Space below the image */
   }
 
-  }
+}
